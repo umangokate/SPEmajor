@@ -1,0 +1,95 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#background {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #d6d6d6;
+  position: relative;
+  top: 0;
+}
+
+.menus {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+#sideNav {
+  text-align: start;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 10px;
+  margin: 8px 30px;
+}
+
+select {
+  height: 30px;
+  width: 200px;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 10px;
+  margin: 8px 30px;
+}
+
+.smallIMG {
+  width: 200px;
+  height: 200px;
+}
+
+
+#Paper {
+  width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#cardMedia {
+  margin: 20px auto;
+}
+
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #cac1c1;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #4046a5;
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}
+
+@media only screen and (max-width: 768px) {}
+
+.moses {
+  max-height: 1px!important;
+}
+
+
+
+.MuiFab-secondary {
+  color: #fff;
+  background-color: green!important;
+}
