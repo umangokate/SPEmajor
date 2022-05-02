@@ -1,0 +1,8 @@
+# Dockerfile for React client
+
+# Build react client
+FROM node:10.19.0
+WORKDIR /SPEMAJOR-MAIN
+COPY . .
+EXPOSE 3000
+CMD ["npm" ,"start"]
