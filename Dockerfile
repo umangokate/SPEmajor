@@ -7,4 +7,3 @@ RUN npm install
 RUN npm install concurrently
 COPY . .
 EXPOSE 4200 3000
-CMD ["npm" ,"run","dev"]
