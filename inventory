@@ -1,2 +1,2 @@
 [ubuntu]
-172.16.131.132 ansible_user=nimmu
+10.0.2.15 ansible_user=um96
