@@ -3,9 +3,9 @@
   width: 100%;
 }
 
-.Welcome img {
+/* .Welcome img {
   width: 100vw;
-}
+} */
 
 @media (max-width: 768px) {
   .Welcome {
@@ -13,7 +13,7 @@
     align-content: center;
   }
 
-  .Welcome img {
+  /* .Welcome img {
     height: 50vh;
-  }
+  } */
 }
