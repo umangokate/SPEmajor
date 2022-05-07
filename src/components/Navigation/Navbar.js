@@ -45,7 +45,7 @@ const Navbar = () => {
 			<Paper className={classes.root}>
 				<Tabs
 					value={auth.url}
-					variant='fullWidth'
+					// variant='fullWidth'
 					indicatorColor='primary'
 					textColor='primary'
 					centered>
