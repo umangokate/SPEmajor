@@ -7,7 +7,7 @@ const Logout = () => {
   const auth = useContext(AuthContext)
   auth.setURL('/')
   auth.logOut()
-  return <Redirect to='/' />
+  return <Redirect to='/login' />
 }
 
 export default observer(Logout)
