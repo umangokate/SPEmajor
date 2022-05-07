@@ -40,6 +40,8 @@ const BookVendor = ({ history, match }) => {
 			: null
 
 		return (
+			<div div className={classes.Modalbox}>
+
 			<Dialog>
 				{vendor && (
 					<div className={classes.BookVendor}>
@@ -81,6 +83,7 @@ const BookVendor = ({ history, match }) => {
 					</div>
 				)}
 			</Dialog>
+			</div>
 		)
 	}
 

@@ -3,6 +3,7 @@ import { observer } from 'mobx-react'
 import Dialog from '../UI/Dialog/Dialog'
 import PhoneIcon from '@material-ui/icons/Phone'
 import { Typography } from '@material-ui/core'
+import classes from './VendorsInfo.module.css'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import AlternateEmailSharpIcon from '@material-ui/icons/AlternateEmailSharp'
 import Rating from '@material-ui/lab/Rating'
@@ -20,6 +21,7 @@ const VendorInfo = ({ match }) => {
 	}, [vendors])
 
 	return (
+		< div className={classes.Modalbox}>
 		<Dialog>
 			<div className='attraction-info-title'>
 				<h3>{vendor.name}</h3>
@@ -45,6 +47,7 @@ const VendorInfo = ({ match }) => {
 			</Typography>
 			<h5>notes: {vendor.small_prints}</h5>
 		</Dialog>
+		</div>
 	)
 }
 

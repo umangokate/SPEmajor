@@ -4,6 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 100px;
   margin: 20px;
+  padding-top: 50px;
 }
 
 .attraction-title {
