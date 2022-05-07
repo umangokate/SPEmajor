@@ -10,7 +10,7 @@ import Logo from '../Logo/Logo'
 import { AuthContext } from '../../stores/Auth'
 
 const loggedTabs = [
-	{ name: <Logo />, link: '/' },
+	{ name: <Logo />, link: '/vendors' },
 	{ name: 'Vendors', link: '/vendors' },
 	{ name: 'Favorites', link: '/favorites' },
 	{ name: 'Budget Tracker', link: '/budget-tracker' },
@@ -20,7 +20,7 @@ const loggedTabs = [
 ]
 
 const guestsTabs = [
-	{ name: <Logo />, link: '/' },
+	{ name: <Logo />, link: '/login' },
 	{ name: 'Login', link: '/login' },
 	{ name: 'Register', link: '/register' }
 ]
@@ -31,6 +31,7 @@ const useStyles = makeStyles({
 		width: '100vw',
 		height: 'auto',
 		zIndex: 20,
+		fontWeight: 'bold',
 		position: 'fixed',
 		top: 0
 	}
