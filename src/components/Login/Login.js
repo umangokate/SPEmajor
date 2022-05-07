@@ -32,7 +32,9 @@ const Login = ({ history, match }) => {
 		}, [auth, match.url])
 
 		return (
-			<Dialog>
+			< div className={classes.Modalbox}>
+			<Dialog> 
+			
 				<h1>Login</h1>
 				<div>
 					<TextField
@@ -58,10 +60,12 @@ const Login = ({ history, match }) => {
 						</Link>
 					</p>
 				</div>
-				<Button variant='contained' color='primary' onClick={login}>
+				<Button variant='contained' color='secondary' onClick={login}>
 					LOGIN
 				</Button>
+				
 			</Dialog>
+			</div>
 		)
 	}
 

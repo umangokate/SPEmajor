@@ -1,6 +1,8 @@
-
+.Modalbox{
+    padding-top: 50px;
+}
 .inputs_section{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .Link{
@@ -15,4 +17,6 @@
 
 .CreateAccount {
     justify-self: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
