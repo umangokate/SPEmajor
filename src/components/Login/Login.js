@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
+import { RiLoginBoxLine } from "react-icons/ri";
 import { toast as popup } from 'react-toastify'
 import { observer } from 'mobx-react'
 import { handleError } from '../../helpers/validator'
@@ -36,6 +37,7 @@ const Login = ({ history, match }) => {
 			<Dialog> 
 			
 				<h1>Login</h1>
+				<RiLoginBoxLine style={{color: 'green', fontSize: '35px'}}/>
 				<div>
 					<TextField
 						name='email'

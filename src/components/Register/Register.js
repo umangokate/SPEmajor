@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react'
 import TextField from '@material-ui/core/TextField'
 import Button from '../UI/Button/Button'
 import { toast as popup } from 'react-toastify'
+import { RiBallPenLine } from "react-icons/ri";
+import { FaAlignCenter } from "react-icons/fa";
 import { observer } from 'mobx-react'
 import Autocomplete from '../UI/Autocomplete/Autocomplete'
 import classes from './register.module.css'
@@ -65,6 +67,7 @@ const Register = ({ match, history }) => {
 		<Dialog>
 			<div className={classes.Register}>
 				<h1>Register</h1>
+				<RiBallPenLine style={{color: 'green', fontSize: '35px'}}/>
 				<TextField
 					name='email'
 					label='Email'
@@ -86,6 +89,8 @@ const Register = ({ match, history }) => {
 				<br />
 				<hr />
 				<h2>Wedding Details</h2>
+				<FaAlignCenter style={{color: 'green', fontSize: '35px'}}/>
+
 				<span className={classes.TextField}>
 					<TextField
 						name='partner1'
