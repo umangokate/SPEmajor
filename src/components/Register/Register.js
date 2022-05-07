@@ -61,6 +61,7 @@ const Register = ({ match, history }) => {
 	}
 
 	return (
+		< div className={classes.Modalbox}>
 		<Dialog>
 			<div className={classes.Register}>
 				<h1>Register</h1>
@@ -81,6 +82,8 @@ const Register = ({ match, history }) => {
 					type='password'
 					onChange={({ target }) => setConfirmPassword(target.value)}
 				/>
+				<br />
+				<br />
 				<hr />
 				<h2>Wedding Details</h2>
 				<span className={classes.TextField}>
@@ -117,7 +120,7 @@ const Register = ({ match, history }) => {
 						<TextField
 							type='number'
 							name='budget'
-							label='Budget(₪)'
+							label='Budget(₹)'
 							onChange={({ target }) => setBudget(target.value)}
 						/>
 					</span>
@@ -128,11 +131,14 @@ const Register = ({ match, history }) => {
 						onChange={({ target }) => setNumOfGuests(target.value)}
 					/>
 				</span>
-				<Button color='primary' onClick={register}>
+				<br />
+				<br />
+				<Button variant="contained" color='secondary' onClick={register}>
 					Register
 				</Button>
 			</div>
 		</Dialog>
+		</div>
 	)
 }
 
