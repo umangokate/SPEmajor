@@ -16,7 +16,7 @@ services:
   node-api:
     build:
       context: .
-    image: um86/nuptials1
+    image: um86/nuptials2
     depends_on:
       - db
     command: 'npm run dev'
