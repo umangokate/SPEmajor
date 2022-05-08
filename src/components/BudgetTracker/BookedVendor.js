@@ -10,7 +10,8 @@ import PaymentSharpIcon from '@material-ui/icons/PaymentSharp'
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		padding: theme.spacing(2, 1)
+		padding: theme.spacing(2, 1),
+		paddingTop: '90px'
 	},
 	media: {
 		height: '30vh',
@@ -26,20 +27,20 @@ export default function BookedVendor({ vendor }) {
 			image={vendor.image}
 			title={vendor.name}>
 			<Paper className={`${classes.root} bookedAttraction`} id='Paper'>
-				<Typography variant='h4' component='h3'>
+				<Typography variant='h3' component='h2'>
 					Your {vendor.category}
 				</Typography>
 				<i>{vendor.name}</i>
 
 				<div id='detail-box'>
 					<div id='col1'>
-						<Typography id='col1' component='p'>
+						<Typography component='p'>
 							<PhoneIcon /> <strong>{vendor.contact}</strong>:{vendor.phone}{' '}
 							<br />
 							<AlternateEmailSharpIcon /> {vendor.email}
 						</Typography>
 						<Typography component='p'>
-							<PaymentSharpIcon /> {vendor.bookedVendor.price}₪
+							<PaymentSharpIcon /> {vendor.bookedVendor.price}₹
 						</Typography>
 						<Typography component='p'>Notes: {vendor.small_prints}</Typography>
 					</div>

@@ -8,6 +8,8 @@ import Dialog from '../UI/Dialog/Dialog'
 import { handleError } from '../../helpers/validator'
 import { WeddingContext } from '../../stores/Wedding'
 import { GuestManagementContext } from '../../stores/GuestManagement'
+import classes from './GuestManagement.module.css'
+
 
 const AddTable = () => {
 	const wedding = useContext(WeddingContext)
@@ -28,6 +30,7 @@ const AddTable = () => {
 	}
 
 	return (
+		< div className={classes.Modalbox}>
 		<Dialog>
 			<h1>Add Table</h1>
 			<div>
@@ -58,6 +61,7 @@ const AddTable = () => {
 				</Button>
 			</div>
 		</Dialog>
+		</div>
 	)
 }
 

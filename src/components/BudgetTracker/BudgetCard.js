@@ -21,7 +21,7 @@ const BudgetCard = () => {
 	const budget = wedding.wedding.budget
 	return (
 		<div className={classes.Budget}>
-			<Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}>
+			<Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
 				<List id='budg-list'>
 					<ListItem>
 						<ListItemAvatar>
@@ -29,7 +29,7 @@ const BudgetCard = () => {
 								<LocalAtmIcon />
 							</Avatar>
 						</ListItemAvatar>
-						<ListItemText primary='Total Budget' secondary={budget + '₪'} />
+						<ListItemText primary='Total Budget' secondary={budget + '₹'} />
 					</ListItem>
 					<ListItem>
 						<ListItemAvatar>
@@ -37,7 +37,7 @@ const BudgetCard = () => {
 								<CreditCardIcon />
 							</Avatar>
 						</ListItemAvatar>
-						<ListItemText primary='Total spent' secondary={totalPrice + '₪'} />
+						<ListItemText primary='Total spent' secondary={totalPrice + '₹'} />
 					</ListItem>
 					<ListItem>
 						<ListItemAvatar>
@@ -47,7 +47,7 @@ const BudgetCard = () => {
 						</ListItemAvatar>
 						<ListItemText
 							primary='Remaining Budget'
-							secondary={budget - totalPrice + '₪'}
+							secondary={budget - totalPrice + '₹'}
 						/>
 					</ListItem>
 				</List>

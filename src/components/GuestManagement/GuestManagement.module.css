@@ -3,6 +3,9 @@
     align-items: center;
     text-align: center;
 }
+.Modalbox{
+    padding-top: 50px;
+}
 
 .user-table {
     background-color: #fff;
