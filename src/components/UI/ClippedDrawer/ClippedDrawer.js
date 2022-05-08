@@ -5,14 +5,17 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import StarIcon from '@material-ui/icons/Star';
+// import StarIcon from '@material-ui/icons/Star';
+import { FcBookmark } from "react-icons/fc";
 import { NavLink } from 'react-router-dom';
 
-const drawerWidth = 230;
+
+const drawerWidth = 200;
 
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
+    paddingTop: "80px"
 
   },
   drawer: {
@@ -23,11 +26,13 @@ const useStyles = makeStyles(theme => ({
   drawerPaper: {
     width: drawerWidth,
     top: "auto",
-    marginTop: "1px"
+    marginTop: "10px"
   },
   content: {
     flexGrow: 1,
+    alignItems: 'left',
     padding: theme.spacing(3),
+    fontSize: 15,
   },
   toolbar: theme.mixins.toolbar,
 }));
@@ -48,7 +53,7 @@ export default function ClippedDrawer(props) {
         <List>
           {props.categories.map((text, index) => (
             <ListItem button component={NavLink} to={`/vendors/${text}`} key={text}>
-              <ListItemIcon><StarIcon /></ListItemIcon>
+              <ListItemIcon><FcBookmark /></ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
