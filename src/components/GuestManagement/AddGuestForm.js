@@ -53,7 +53,7 @@ const AddGuestForm = () => {
 
 	return (
 		<div className={classes.AddGuest}>
-			<h3>Add Guest</h3>
+			<h2 style={{color : "#F50057"}}>Add Guest</h2>
 			<span className={classes.TextField}>
 				<TextField
 					name='name'
@@ -96,11 +96,11 @@ const AddGuestForm = () => {
 				/>
 			</span>
 			<div className={classes.btn}>
-				<Button variant='contained' color='primary' onClick={AddGuest}>
+				<Button variant='contained' color='secondary' onClick={AddGuest}>
 					Add Guest
 				</Button>
 			</div>
-			<hr />
+			{/* <hr /> */}
 		</div>
 	)
 
