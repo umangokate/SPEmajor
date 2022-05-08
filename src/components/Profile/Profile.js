@@ -34,7 +34,7 @@ const Profile = ({ match }) => {
     const data = wedding.wedding
 		return (
 			<div className={classes.Profile}>
-				<h1>Profile</h1>
+				<h1 style={{color : "#F50057"}}>Profile</h1>
 				<p className={classes.Description}>
 					Please keep the information here up to date so your wedding planning
 					will stay on-course.
@@ -42,7 +42,7 @@ const Profile = ({ match }) => {
 				<hr />
 				<img src={brideAndGroom} alt='Logo' />
 
-				<h3>Personal Details:</h3>
+				<h3 style={{color : "#F50057"}}>Personal Details:</h3>
 				<div className={classes.Names}>
 					<TextField
 						name='partner1'
@@ -57,7 +57,7 @@ const Profile = ({ match }) => {
 						onChange={handleInputs}
 					/>
 				</div>
-				<h3>Wedding Details:</h3>
+				<h3 style={{color : "#F50057"}}>Wedding Details:</h3>
 				<div className={classes.Details}>
 					<TextField
 						name='date'
