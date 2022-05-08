@@ -8,6 +8,8 @@ services:
       - MYSQL_USER=umang
       - MYSQL_PASSWORD=password
     container_name: nuptials-db
+    volumes:
+      - data-volume:/var/lib/db
     expose:
       - "3301"
     ports:
