@@ -4,14 +4,14 @@ a {
 }
 
 #background {
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
   background-size: cover;
   background-repeat: repeat-y;
   background-attachment: fixed;
   position: fixed;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 #navbar {

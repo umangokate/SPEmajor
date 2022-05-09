@@ -77,15 +77,37 @@
     "small_prints": "max capacity: 400 guests"
   },
   {
-    "category": "Venue",
-    "name": "Riya",
-    "location": "Tel-Aviv",
+    "category": "Food",
+    "name": "Punjabi Corner",
+    "location": "Electronic City phase 1",
     "image": "https://images.mitchatnim.co.il/customers/80245815/dbca399e0cd24552b398ea0e4138d245_33.jpg",
     "rating": 4,
-    "contact": "Dana",
+    "contact": "Nimesh",
     "phone": "050-6778844",
-    "email": "riya_events@gmail.com",
-    "small_prints": "max capacity: 600 guests"
+    "email": "Nimu@gmail.com",
+    "small_prints": "max capacity: 50 guests"
+  },
+  {
+    "category": "Food",
+    "name": "Juicy Corner",
+    "location": "Electronic City phase 1",
+    "image": "https://images.mitchatnim.co.il/customers/80245815/dbca399e0cd24552b398ea0e4138d245_33.jpg",
+    "rating": 3,
+    "contact": "Umang",
+    "phone": "1234567895",
+    "email": "um@gmail.com",
+    "small_prints": "max capacity: 20 guests"
+  },
+  {
+    "category": "Food",
+    "name": "Milkshake Corner",
+    "location": "Electronic City phase 1",
+    "image": "https://images.mitchatnim.co.il/customers/80245815/dbca399e0cd24552b398ea0e4138d245_33.jpg",
+    "rating": 5,
+    "contact": "Srijan",
+    "phone": "050-65488844",
+    "email": "Sri@gmail.com",
+    "small_prints": "max capacity: 40 guests"
   },
   {
     "category": "Photographer",
