@@ -1,3 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+.VendorTitle{
+  color: green;
+  font-family: 'Bungee';
+  text-shadow: 2px 2px white;
+
+}
 .Vendors {
   display: grid;
   overflow: -moz-hidden-unscrollable;
