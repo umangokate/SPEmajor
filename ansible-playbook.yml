@@ -9,8 +9,6 @@
         dest: ./
 
     # Pull the Docker images from Docker Hub
-    - name: Remove and kill all containers
-      command: docker rm $(docker ps -a -q)
     - name: Pull the Docker images specifed in docker-compose
       command: docker-compose pull
 
