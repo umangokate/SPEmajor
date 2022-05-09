@@ -33,6 +33,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'left',
     padding: theme.spacing(3),
     fontSize: 15,
+    fontStyle: 'bold'
   },
   toolbar: theme.mixins.toolbar,
 }));

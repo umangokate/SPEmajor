@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 .DesktopOnly {
   visibility: hidden;
 }
@@ -9,6 +11,8 @@
   z-index: 20;
   position: 'fixed';
   top: 0;
+  font-family: 'Roboto';
+  /* font-size: 20px; */
 }
 
 @media (min-width: 768px) {

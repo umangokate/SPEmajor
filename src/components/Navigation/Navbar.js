@@ -48,7 +48,7 @@ const Navbar = () => {
 					value={auth.url}
 					// variant='fullWidth'
 					indicatorColor='primary'
-					textColor='primary'
+					// textColor='primary'
 					centered>
 					{tabs.map(t => (
 						<Tab
