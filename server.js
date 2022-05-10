@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
+var fs = require('fs')
 const cors = require('cors')
 const syncDb = require('./server/config/relations')
 
@@ -10,11 +11,16 @@ const vendors = require('./server/routes/vendors')
 const wedding = require('./server/routes/wedding')
 const auth = require('./server/routes/auth')
 const guests = require('./server/routes/guestManagement')
+var path = require('path')
+
 
 app.use(process.env.NODE_ENV === 'DEVELOPMENT' ? cors() : null)
 app.use(process.env.NODE_ENV === 'DEVELOPMENT' ? morgan("dev") : null)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(morgan('common', {
+  stream: fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
+}))
 
 
 app.use('/api/vendors', vendors)
