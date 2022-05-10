@@ -47,7 +47,7 @@ const BudgetCard = () => {
 						</ListItemAvatar>
 						<ListItemText
 							primary='Remaining Budget'
-							secondary={budget - totalPrice + '₹'}
+							secondary={budget - totalPrice + '₹	'}
 						/>
 					</ListItem>
 				</List>
