@@ -13,8 +13,6 @@ services:
     ports:
       - "3301:3306"
     restart: always
-    volumes:
-      - my-datavolume:/var/lib/mysql
   node-api:
     build:
       context: .
@@ -36,8 +34,6 @@ services:
     expose:
       - "4200"
       - "3000"
-volumes:
-    my-datavolume:
   
 
 
