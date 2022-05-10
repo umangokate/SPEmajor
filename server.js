@@ -18,7 +18,7 @@ app.use(process.env.NODE_ENV === 'DEVELOPMENT' ? cors() : null)
 app.use(process.env.NODE_ENV === 'DEVELOPMENT' ? morgan("dev") : null)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(morgan('common', {
+app.use(morgan('combined', {
   stream: fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
 }))
 
