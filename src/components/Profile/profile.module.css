@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 .Profile {
 	text-align: center;
 	display: grid;
@@ -5,13 +8,20 @@
 	height: 55vh;
 	justify-items: center;
 	padding-top: 90px;
+	font-family: 'Roboto';
+	text-shadow: 1px 1px white;
+    color : green;
+    /* font-size: larger;	 */
 }
 .sidePic {
 	display: grid;
 }
 .Description {
 	text-align: center;
-	color: green;
+	font-family: 'Roboto';
+	/* text-shadow:  2px white; */
+    color : red;
+    font-size: larger;
 }
 .Profile img {
 	height: 150px;

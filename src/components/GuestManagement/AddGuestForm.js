@@ -53,7 +53,7 @@ const AddGuestForm = () => {
 
 	return (
 		<div className={classes.AddGuest}>
-			<h2 style={{color : "#F50057"}}>Add Guest</h2>
+			<h2>Add Guest</h2>
 			<span className={classes.TextField}>
 				<TextField
 					name='name'
